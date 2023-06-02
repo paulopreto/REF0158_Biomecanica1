@@ -12,3 +12,5 @@ print(evolucaomuscle)
 
 plt.bar(['antes','depois'],[antes,depois])
 plt.show()
+
+print('ACABOU VAMOS EMBORA. BOM FINAL DE SEMANA! TECHAU!')
