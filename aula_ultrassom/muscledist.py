@@ -96,4 +96,3 @@ edges = cv2.addWeighted(sobelx, 0.5, sobely, 0.5, 0)
 cv2.imshow("Edges Image", edges)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
