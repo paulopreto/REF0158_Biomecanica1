@@ -16,7 +16,7 @@ plots: raw EMG signal, filtered EMG signal, RMS EMG, and median frequency over t
 
 How to use:
 The script is run via the command line and accepts four arguments:
-python3 process_emg.py [emg_file] [fs] [start_time] [end_time] [--no-plot]
+python3 emg_labiocom.py [emg_file] [fs] [start_time] [end_time] [--no-plot]
 
 Where:
 emg_file: is the path to the EMG signal file you wish to process.
@@ -26,7 +26,7 @@ end_time: is the end time for the signal analysis in seconds.
 --no-plot: is an option that, if specified, disables the plotting of the EMG signal plots.
 
 Example:
-python3 process_emg.py emg_data.txt 2000 2 7 --no-plot
+python3 emg_labiocom.py emg_data.txt 2000 2 7 --no-plot
 
 Output:
 The script will produce four plots representing:
@@ -35,7 +35,7 @@ The script will produce four plots representing:
 3. RMS EMG.
 4. Median frequency over time.
 If the --no-plot option is specified, the plots will not be displayed.
-Moreover, a text file with the calculated EMG results will be saved as "{filename}_results_emg_labiocom.txt".
+Moreover, a text file with the calculated EMG results will be saved as {filename}_results_emg_labiocom.txt.
 
 Prerequisites:
 This script requires Python 3 and the following Python libraries: numpy, scipy, matplotlib, os, and argparse.
