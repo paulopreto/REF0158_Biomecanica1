@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 EMG Signal Processing
 Author: Prof. PAULO ROBERTO PEREIRA SANTIAGO
@@ -54,6 +55,7 @@ import os
 import argparse
 import matplotlib.pyplot as plt
 from scipy.signal import butter, filtfilt, welch, detrend
+from scipy.signal.windows import hann
 
 
 def butter_lowpass(cutoff, fs, order=4):
@@ -130,7 +132,7 @@ def calculate_median_frequency_for_window(window, fs):
     nperseg = len(window)
     noverlap = int(nperseg / 2)  # Escolha do overlap
     nfft = 1024  # Escolha do numero de pontos FFT
-    freqs, psd = welch(window, fs, window='hanning', nperseg=nperseg, noverlap=noverlap, nfft=nfft)
+    freqs, psd = welch(window, fs, window=hann(nperseg), nperseg=nperseg, noverlap=noverlap, nfft=nfft)
     median_freq_idx = np.where(np.cumsum(psd) >= np.sum(psd) / 2)
 
     if median_freq_idx[0].size > 0:
