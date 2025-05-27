@@ -105,7 +105,7 @@ Permitir repouso adequado entre as tarefas para evitar fadiga prematura.
    * Comparar amplitude do EMG com condição sem carga
    * Salvar dados
 
- 5. **EMG de Flexão e Extensão do Cotovelo Com Carga de 10 kg**
+5. **EMG de Flexão e Extensão do Cotovelo Com Carga de 10 kg**
 
    * Instrução: repetir movimentos com haltere de carga leve/moderada
    * Realizar 5-10 ciclos completos
